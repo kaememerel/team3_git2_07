@@ -10,3 +10,9 @@ elif age > 50:
     print("W Twoim wieku alkohol jest juz szkodliwy")
 else:
     exit("Jestes za mlody na alkohol!")
+
+
+płeć = input("Podaj płeć użytkownika: ")
+
+if płeć == "kobieta":
+    print("aperol spritz gratis")
