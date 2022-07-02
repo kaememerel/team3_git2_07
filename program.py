@@ -11,8 +11,7 @@ elif age > 50:
 else:
     exit("Jestes za mlody na alkohol!")
 
+plec = input("Podaj swoją płeć: ")
 
-płeć = input("Podaj płeć użytkownika: ")
-
-if płeć == "kobieta":
+if plec == "kobieta":
     print("aperol spritz gratis")
