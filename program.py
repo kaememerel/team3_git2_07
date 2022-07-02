@@ -22,4 +22,9 @@ elif wiek > 50 and region == "EU":
     print("Witaj w naszym sklepie z alkoholem dla EU")
     print("W Twoim wieku alkohol jest już szkodliwy")
 else:
-    exit("Jesteś za młody na alkohol!")
+    exit("Jestes za mlody na alkohol!")
+
+plec = input("Podaj swoją płeć: ")
+
+if plec == "kobieta":
+    print("aperol spritz gratis")
