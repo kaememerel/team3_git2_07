@@ -10,4 +10,4 @@ Funkcjonalnosci aplikacji v1.0:
 
 v.1.1
 - [x] zwiekszenie limitu do 50 lat bez ostrzezenia
-- [ ] lepsza obsługa osób osób j/w
+- [x] lepsza obsługa osób osób j/w
