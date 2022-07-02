@@ -10,3 +10,5 @@ elif age > 50:
     print("W Twoim wieku alkohol jest juz szkodliwy")
 else:
     exit("Jestes za mlody na alkohol!")
+
+plec = input("Podaj swoją płec :")
