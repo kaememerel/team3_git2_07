@@ -1,23 +1,30 @@
-age = input("Podaj wiek uzytkownika: ")
-# Sprawdzamu, czy wiek jest zlozony z cyfr
-if age.isdigit() == False:
-    exit("Wiek musi byc podany jako liczba")
-age = int(age)
-if age >= 18 and age <= 50:
+region = input("Wybierz swój region(EU/USA): ")
+if region == "USA":
+        print("Wybrales swoj region: " + region)
+elif region == "EU":
+                print("Wybrales swoj region: " + region)
+else:
+        exit("Mozesz wybrac tylko EU lub USA")
+wiek = input("Podaj wiek użytkownika: ")
+# Sprawdzamy, czy wiek jest złożony z cyfr
+if wiek.isdigit() == False:
+    exit("Wiek musi być podany jako liczba")
+wiek = int(wiek)
+if wiek >= 21 and wiek <= 50 and region == "USA" :
     print("Witaj w naszym sklepie z alkoholem")
-elif age > 50:
+elif wiek > 50 and region == "USA":
+    print("Witaj w naszym sklepie z alkoholem dla USA")
+    print("W Twoim wieku alkohol jest już szkodliwy")
+
+elif wiek >= 18 and wiek <= 50 and region == "EU" :
     print("Witaj w naszym sklepie z alkoholem")
-    print("W Twoim wieku alkohol jest juz szkodliwy")
+elif wiek > 50 and region == "EU":
+    print("Witaj w naszym sklepie z alkoholem dla EU")
+    print("W Twoim wieku alkohol jest już szkodliwy")
 else:
     exit("Jestes za mlody na alkohol!")
-
-region = input("Wybierz swój region(EU/USA): ")
-if region != "EU" and region != "USA":
-    exit("Mozesz wybrac tylko EU lub USA")
-exit("Wybrales swoj region: " + region)
 
 plec = input("Podaj swoją płeć: ")
 
 if plec == "kobieta":
     print("aperol spritz gratis")
-
