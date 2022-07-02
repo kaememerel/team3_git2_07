@@ -1,12 +1,25 @@
-age = input("Podaj wiek uzytkownika: ")
-# Sprawdzamu, czy wiek jest zlozony z cyfr
-if age.isdigit() == False:
-    exit("Wiek musi byc podany jako liczba")
-age = int(age)
-if age >= 18 and age <= 50:
-    print("Witaj w naszym sklepie z alkoholem")
-elif age > 50:
-    print("Witaj w naszym sklepie z alkoholem")
-    print("W Twoim wieku alkohol jest juz szkodliwy")
+region = input("Wybierz swój region(EU/USA): ")
+if region == "USA":
+        print("Wybrales swoj region: " + region)
+elif region == "EU":
+                print("Wybrales swoj region: " + region)
 else:
-    exit("Jestes za mlody na alkohol!")
+        exit("Mozesz wybrac tylko EU lub USA")
+wiek = input("Podaj wiek użytkownika: ")
+# Sprawdzamy, czy wiek jest złożony z cyfr
+if wiek.isdigit() == False:
+    exit("Wiek musi być podany jako liczba")
+wiek = int(wiek)
+if wiek >= 21 and wiek <= 50 and region == "USA" :
+    print("Witaj w naszym sklepie z alkoholem")
+elif wiek > 50 and region == "USA":
+    print("Witaj w naszym sklepie z alkoholem dla USA")
+    print("W Twoim wieku alkohol jest już szkodliwy")
+
+elif wiek >= 18 and wiek <= 50 and region == "EU" :
+    print("Witaj w naszym sklepie z alkoholem")
+elif wiek > 50 and region == "EU":
+    print("Witaj w naszym sklepie z alkoholem dla EU")
+    print("W Twoim wieku alkohol jest już szkodliwy")
+else:
+    exit("Jesteś za młody na alkohol!")
